@@ -5,7 +5,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import java.util.ArrayList;
 import static io.restassured.RestAssured.*;
 
-public class scooterRegisterCourier {
+public class ScooterRegisterCourier {
 
     /*
     метод регистрации нового курьера

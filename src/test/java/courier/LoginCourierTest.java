@@ -1,3 +1,5 @@
+package courier;
+
 import dto.DtoCourier;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
@@ -12,8 +14,9 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static utils.scooterRegisterCourier.registerNewCourierAndReturnLoginPassword;
-import static utils.supportClass.*;
+import static utils.Configuration.BASE_URL;
+import static utils.ScooterRegisterCourier.registerNewCourierAndReturnLoginPassword;
+import static utils.CourierMethods.*;
 
 public class LoginCourierTest {
 

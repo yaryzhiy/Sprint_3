@@ -1,3 +1,5 @@
+package order;
+
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
 import org.junit.After;
@@ -9,8 +11,10 @@ import java.util.ArrayList;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.CoreMatchers.*;
-import static utils.scooterRegisterCourier.registerNewCourierAndReturnLoginPassword;
-import static utils.supportClass.*;
+import static utils.Configuration.BASE_URL;
+import static utils.OrderMethods.*;
+import static utils.ScooterRegisterCourier.registerNewCourierAndReturnLoginPassword;
+import static utils.CourierMethods.*;
 
 public class GetOrderListTest {
 

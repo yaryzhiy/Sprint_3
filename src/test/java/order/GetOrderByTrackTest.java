@@ -1,3 +1,5 @@
+package order;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
@@ -7,8 +9,8 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static utils.supportClass.BASE_URL;
-import static utils.supportClass.createOrder;
+import static utils.Configuration.BASE_URL;
+import static utils.OrderMethods.createOrder;
 
 public class GetOrderByTrackTest {
 

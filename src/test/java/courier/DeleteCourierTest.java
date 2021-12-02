@@ -1,3 +1,5 @@
+package courier;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
@@ -8,9 +10,9 @@ import java.util.ArrayList;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static utils.scooterRegisterCourier.registerNewCourierAndReturnLoginPassword;
-import static utils.supportClass.BASE_URL;
-import static utils.supportClass.getCourierId;
+import static utils.Configuration.BASE_URL;
+import static utils.ScooterRegisterCourier.registerNewCourierAndReturnLoginPassword;
+import static utils.CourierMethods.getCourierId;
 
 public class DeleteCourierTest {
 

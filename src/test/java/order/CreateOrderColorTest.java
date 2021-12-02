@@ -1,3 +1,5 @@
+package order;
+
 import dto.DtoOrder;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
@@ -6,7 +8,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static utils.supportClass.BASE_URL;
+import static utils.Configuration.BASE_URL;
 
 public class CreateOrderColorTest {
 

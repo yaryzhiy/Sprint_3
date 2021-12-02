@@ -1,3 +1,5 @@
+package order;
+
 import dto.DtoOrder;
 import io.restassured.response.Response;
 import org.junit.Test;
@@ -7,7 +9,7 @@ import org.junit.runners.Parameterized;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static utils.supportClass.BASE_URL;
+import static utils.Configuration.BASE_URL;
 
 @RunWith(Parameterized.class)
 public class CreateOrderColorParameterizedTest {
