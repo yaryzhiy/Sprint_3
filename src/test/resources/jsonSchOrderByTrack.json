@@ -1,0 +1,120 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "order"
+    ],
+    "properties": {
+        "order": {
+            "$id": "#/properties/order",
+            "type": "object",
+            "required": [
+                "id",
+                "firstName",
+                "lastName",
+                "address",
+                "metroStation",
+                "phone",
+                "rentTime",
+                "deliveryDate",
+                "track",
+                "status",
+                "color",
+                "comment",
+                "cancelled",
+                "finished",
+                "inDelivery",
+                "courierFirstName",
+                "createdAt",
+                "updatedAt"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/order/properties/id",
+                    "type": "integer"
+                },
+                "firstName": {
+                    "$id": "#/properties/order/properties/firstName",
+                    "type": "string"
+                },
+                "lastName": {
+                    "$id": "#/properties/order/properties/lastName",
+                    "type": "string"
+                },
+                "address": {
+                    "$id": "#/properties/order/properties/address",
+                    "type": "string"
+                },
+                "metroStation": {
+                    "$id": "#/properties/order/properties/metroStation",
+                    "type": "string"
+                },
+                "phone": {
+                    "$id": "#/properties/order/properties/phone",
+                    "type": "string"
+                },
+                "rentTime": {
+                    "$id": "#/properties/order/properties/rentTime",
+                    "type": "integer"
+                },
+                "deliveryDate": {
+                    "$id": "#/properties/order/properties/deliveryDate",
+                    "type": "string"
+                },
+                "track": {
+                    "$id": "#/properties/order/properties/track",
+                    "type": "integer"
+                },
+                "status": {
+                    "$id": "#/properties/order/properties/status",
+                    "type": "integer"
+                },
+                "color": {
+                    "$id": "#/properties/order/properties/color",
+                    "type": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/order/properties/color/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/order/properties/color/items/anyOf/0",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                },
+                "comment": {
+                    "$id": "#/properties/order/properties/comment",
+                    "type": "string"
+                },
+                "cancelled": {
+                    "$id": "#/properties/order/properties/cancelled",
+                    "type": "boolean"
+                },
+                "finished": {
+                    "$id": "#/properties/order/properties/finished",
+                    "type": "boolean"
+                },
+                "inDelivery": {
+                    "$id": "#/properties/order/properties/inDelivery",
+                    "type": "boolean"
+                },
+                "courierFirstName": {
+                    "$id": "#/properties/order/properties/courierFirstName",
+                    "type": "string"
+                },
+                "createdAt": {
+                    "$id": "#/properties/order/properties/createdAt",
+                    "type": "string"
+                },
+                "updatedAt": {
+                    "$id": "#/properties/order/properties/updatedAt",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

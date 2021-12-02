@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "track"
+    ],
+    "properties": {
+        "track": {
+            "$id": "#/properties/track",
+            "type": "integer"
+        }
+    },
+    "additionalProperties": true
+}
